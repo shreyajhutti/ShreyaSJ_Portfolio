@@ -1,0 +1,284 @@
+:root{
+    --black: #132043;
+    --blue: #1F4172;
+    --pink: #F1B4BB;
+    --light: #FDF0F0;
+    --white: #FFFFFF;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: var(--black);
+    font-family: Josefin Sans, Amita;
+    background-color: var(--light);
+    box-sizing: border-box;
+}
+
+.bg-light{
+    background-color: var(--light);
+}
+
+.bg-dark{
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+
+
+.btn{
+    width: 150px;
+    padding: 10px;
+    margin: 15px;
+    font-weight: 900;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.4s;
+    top: 0;
+    cursor: pointer;
+}
+
+.btn-dark{
+    background-color: var(--blue);
+    color: var(--light);
+    border:var(--pink);
+    box-shadow:5px 5px var(--pink);
+}
+
+.btn-light{
+    background-color: var(--light);
+    color: var(--blue);
+    border:var(--pink);
+    box-shadow:5px 5px var(--pink);
+}
+button:hover{
+    top: -10px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2{
+    color: var(--blue);
+}
+
+.h-blue{
+    color: var(--blue);
+}
+
+.h-light{
+    color: var(--light);
+}
+
+header{
+    text-align: center;
+}
+
+.icons{
+    height: 20px;
+}
+
+/* --------------------------- navbar ------------------------ */
+#navbar{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.sj-logo{
+    height: 50px;
+    position: absolute;
+    
+}
+
+ul{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    padding-left: 115px;
+    list-style-type: none;
+    color: var(--blue);
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blue)
+}
+
+a:hover{
+    transition: 0.2s;
+    color: var(--pink);
+}
+
+/* --------------------------- main ------------------------ */
+.name{
+    font-family: Libre Baskerville;
+    font-weight: 700;
+}
+
+.hero{
+    padding: 40px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info{
+    text-align: left;
+}
+.photo{
+    text-align: center;
+}
+/* --------------------------- education ------------------------ */
+#education{
+    display: flex;
+    padding: 20px;
+}
+
+.edu{
+    padding: 10px 150px;
+    
+}
+.edu-card{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+}
+.circle{
+    background-color: var(--pink);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-text{
+    color: var(--blue);
+}
+/* --------------------------- projects ------------------------ */
+#projects{
+    padding: 20px;
+}
+
+.project-grid{
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.windows-tab{
+    height: 300px;
+}
+
+.proj-card{
+    width: 300px;
+    position: relative;
+    text-align: left;
+}
+
+.proj-text{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    right: 50px;
+}
+
+/* --------------------------- certifications ------------------------ */
+#certifications{
+    padding: 20px;
+}
+
+.certificate{
+    padding: 10px 150px;
+    text-align: center;
+}
+
+/* --------------------------- skills ------------------------ */
+#skills{
+    padding: 20px;
+}
+
+.skill-img{
+    height: 100px;
+}
+
+.skill-flex{
+    padding: 60px 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center ;
+}
+/* --------------------------- contact ------------------------ */
+#contacts{
+    padding: 20px;
+}
+
+.cont-grid{
+    padding: 10px 150px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-info-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 10fr;
+    grid-row-gap: 25px;
+}
+
+.cont-info-grid > p > a {
+    color: var(--light);
+}
+
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* --------------------------- footer ------------------------ */
+
+.footer{
+    display: block;
+    padding: 6px;
+}
+
+.left-foot{
+    float: left;
+}
+.right-foot{
+    float: right;
+    padding-top: 10px;
+}
+
+/* media */
+
+@media(max-width:934px){
+    /* --------------------------- navbar ------------------------ */
+#navbar{
+    display: none;
+
+}
+}
